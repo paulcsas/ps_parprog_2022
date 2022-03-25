@@ -1,0 +1,163 @@
+The system is: Darwin - 20.2.0 - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /Users/amech/mambaforge3/bin/mpicc 
+Build flags: -march=core2;-mtune=haswell;-mssse3;-ftree-vectorize;-fPIC;-fPIE;-fstack-protector-strong;-O2;-pipe;-isystem;/Users/amech/mambaforge3/include
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is Clang, found in "/Users/amech/Documents/GitHub/ps_parprog_2022/02/cmake-build-debug/CMakeFiles/3.21.1/CompilerIdC/a.out"
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /Users/amech/Documents/GitHub/ps_parprog_2022/02/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/Applications/CLion.app/Contents/bin/ninja/mac/ninja cmTC_2d98f && [1/2] Building C object CMakeFiles/cmTC_2d98f.dir/CMakeCCompilerABI.c.o
+mpicc for MPICH version 3.4.2
+clang version 12.0.1
+Target: x86_64-apple-darwin13.4.0
+Thread model: posix
+InstalledDir: /Users/amech/mambaforge3/bin
+clang-12: warning: -Wl,-v: 'linker' input unused [-Wunused-command-line-argument]
+ (in-process)
+ "/Users/amech/mambaforge3/bin/clang-12" -cc1 -triple x86_64-apple-macosx11.0.0 -Wundef-prefix=TARGET_OS_OSX -Werror=undef-prefix -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -emit-obj --mrelax-relocations -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=all -fno-rounding-math -munwind-tables -target-sdk-version=11.3 -fcompatibility-qualified-id-block-type-checking -fvisibility-inlines-hidden-static-local-var -target-cpu core2 -target-feature +ssse3 -tune-cpu haswell -debugger-tuning=lldb -target-linker-version 530 -v -resource-dir /Users/amech/mambaforge3/lib/clang/12.0.1 -dependency-file CMakeFiles/cmTC_2d98f.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_2d98f.dir/CMakeCCompilerABI.c.o -sys-header-deps -isystem /Users/amech/mambaforge3/include -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I /Users/amech/mambaforge3/include -I /Users/amech/mambaforge3/include -c-isystem /Users/amech/mambaforge3/include -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Users/amech/mambaforge3/lib/clang/12.0.1/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include -O2 -fdebug-compilation-dir /Users/amech/Documents/GitHub/ps_parprog_2022/02/cmake-build-debug/CMakeFiles/CMakeTmp -ferror-limit 19 -stack-protector 2 -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fmax-type-align=16 -vectorize-loops -vectorize-slp -o CMakeFiles/cmTC_2d98f.dir/CMakeCCompilerABI.c.o -x c /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeCCompilerABI.c
+clang -cc1 version 12.0.1 based upon LLVM 12.0.1 default target x86_64-apple-darwin20.2.0
+ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include"
+ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks"
+ignoring duplicate directory "/Users/amech/mambaforge3/include"
+ignoring duplicate directory "/Users/amech/mambaforge3/include"
+  as it is a non-system directory that duplicates a system directory
+ignoring duplicate directory "/Users/amech/mambaforge3/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /Users/amech/mambaforge3/include
+ /Users/amech/mambaforge3/lib/clang/12.0.1/include
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks (framework directory)
+End of search list.
+[2/2] Linking C executable cmTC_2d98f
+mpicc for MPICH version 3.4.2
+clang version 12.0.1
+Target: x86_64-apple-darwin13.4.0
+Thread model: posix
+InstalledDir: /Users/amech/mambaforge3/bin
+ "/Users/amech/mambaforge3/bin/x86_64-apple-darwin13.4.0-ld" -demangle -lto_library /Users/amech/mambaforge3/lib/libLTO.12.dylib -dynamic -arch x86_64 -platform_version macos 11.0.0 11.3 -pie -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -o cmTC_2d98f -L/Users/amech/mambaforge3/lib -L/Users/amech/mambaforge3/lib -L/Users/amech/mambaforge3/lib -rpath /Users/amech/mambaforge3/lib -framework OpenCL -commons use_dylibs -search_paths_first -headerpad_max_install_names -pie -headerpad_max_install_names -dead_strip_dylibs -rpath /Users/amech/mambaforge3/lib -v CMakeFiles/cmTC_2d98f.dir/CMakeCCompilerABI.c.o -lmpi -lpmpi -lSystem /Users/amech/mambaforge3/lib/clang/12.0.1/lib/darwin/libclang_rt.osx.a
+@(#)PROGRAM:ld  PROJECT:ld64-609
+BUILD 15:45:44 Jan 18 2022
+configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em (tvOS)
+Library search paths:
+	/Users/amech/mambaforge3/lib
+	/Users/amech/mambaforge3/lib
+	/Users/amech/mambaforge3/lib
+	/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib
+Framework search paths:
+	/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/
+
+
+
+Parsed C implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/Users/amech/mambaforge3/include]
+    add: [/Users/amech/mambaforge3/lib/clang/12.0.1/include]
+    add: [/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include]
+  end of search list found
+  collapse include dir [/Users/amech/mambaforge3/include] ==> [/Users/amech/mambaforge3/include]
+  collapse include dir [/Users/amech/mambaforge3/lib/clang/12.0.1/include] ==> [/Users/amech/mambaforge3/lib/clang/12.0.1/include]
+  collapse include dir [/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include]
+  implicit include dirs: [/Users/amech/mambaforge3/include;/Users/amech/mambaforge3/lib/clang/12.0.1/include;/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include]
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(CMAKE_LINKER-NOTFOUND|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /Users/amech/Documents/GitHub/ps_parprog_2022/02/cmake-build-debug/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/Applications/CLion.app/Contents/bin/ninja/mac/ninja cmTC_2d98f && [1/2] Building C object CMakeFiles/cmTC_2d98f.dir/CMakeCCompilerABI.c.o]
+  ignore line: [mpicc for MPICH version 3.4.2]
+  ignore line: [clang version 12.0.1]
+  ignore line: [Target: x86_64-apple-darwin13.4.0]
+  ignore line: [Thread model: posix]
+  ignore line: [InstalledDir: /Users/amech/mambaforge3/bin]
+  ignore line: [clang-12: warning: -Wl -v: 'linker' input unused [-Wunused-command-line-argument]]
+  ignore line: [ (in-process)]
+  ignore line: [ "/Users/amech/mambaforge3/bin/clang-12" -cc1 -triple x86_64-apple-macosx11.0.0 -Wundef-prefix=TARGET_OS_OSX -Werror=undef-prefix -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -emit-obj --mrelax-relocations -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=all -fno-rounding-math -munwind-tables -target-sdk-version=11.3 -fcompatibility-qualified-id-block-type-checking -fvisibility-inlines-hidden-static-local-var -target-cpu core2 -target-feature +ssse3 -tune-cpu haswell -debugger-tuning=lldb -target-linker-version 530 -v -resource-dir /Users/amech/mambaforge3/lib/clang/12.0.1 -dependency-file CMakeFiles/cmTC_2d98f.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_2d98f.dir/CMakeCCompilerABI.c.o -sys-header-deps -isystem /Users/amech/mambaforge3/include -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I /Users/amech/mambaforge3/include -I /Users/amech/mambaforge3/include -c-isystem /Users/amech/mambaforge3/include -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Users/amech/mambaforge3/lib/clang/12.0.1/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include -O2 -fdebug-compilation-dir /Users/amech/Documents/GitHub/ps_parprog_2022/02/cmake-build-debug/CMakeFiles/CMakeTmp -ferror-limit 19 -stack-protector 2 -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fmax-type-align=16 -vectorize-loops -vectorize-slp -o CMakeFiles/cmTC_2d98f.dir/CMakeCCompilerABI.c.o -x c /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeCCompilerABI.c]
+  ignore line: [clang -cc1 version 12.0.1 based upon LLVM 12.0.1 default target x86_64-apple-darwin20.2.0]
+  ignore line: [ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include"]
+  ignore line: [ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks"]
+  ignore line: [ignoring duplicate directory "/Users/amech/mambaforge3/include"]
+  ignore line: [ignoring duplicate directory "/Users/amech/mambaforge3/include"]
+  ignore line: [  as it is a non-system directory that duplicates a system directory]
+  ignore line: [ignoring duplicate directory "/Users/amech/mambaforge3/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /Users/amech/mambaforge3/include]
+  ignore line: [ /Users/amech/mambaforge3/lib/clang/12.0.1/include]
+  ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include]
+  ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks (framework directory)]
+  ignore line: [End of search list.]
+  ignore line: [[2/2] Linking C executable cmTC_2d98f]
+  ignore line: [mpicc for MPICH version 3.4.2]
+  ignore line: [clang version 12.0.1]
+  ignore line: [Target: x86_64-apple-darwin13.4.0]
+  ignore line: [Thread model: posix]
+  ignore line: [InstalledDir: /Users/amech/mambaforge3/bin]
+  link line: [ "/Users/amech/mambaforge3/bin/x86_64-apple-darwin13.4.0-ld" -demangle -lto_library /Users/amech/mambaforge3/lib/libLTO.12.dylib -dynamic -arch x86_64 -platform_version macos 11.0.0 11.3 -pie -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -o cmTC_2d98f -L/Users/amech/mambaforge3/lib -L/Users/amech/mambaforge3/lib -L/Users/amech/mambaforge3/lib -rpath /Users/amech/mambaforge3/lib -framework OpenCL -commons use_dylibs -search_paths_first -headerpad_max_install_names -pie -headerpad_max_install_names -dead_strip_dylibs -rpath /Users/amech/mambaforge3/lib -v CMakeFiles/cmTC_2d98f.dir/CMakeCCompilerABI.c.o -lmpi -lpmpi -lSystem /Users/amech/mambaforge3/lib/clang/12.0.1/lib/darwin/libclang_rt.osx.a]
+    arg [/Users/amech/mambaforge3/bin/x86_64-apple-darwin13.4.0-ld] ==> ignore
+    arg [-demangle] ==> ignore
+    arg [-lto_library] ==> ignore, skip following value
+    arg [/Users/amech/mambaforge3/lib/libLTO.12.dylib] ==> skip value of -lto_library
+    arg [-dynamic] ==> ignore
+    arg [-arch] ==> ignore
+    arg [x86_64] ==> ignore
+    arg [-platform_version] ==> ignore
+    arg [macos] ==> ignore
+    arg [11.0.0] ==> ignore
+    arg [11.3] ==> ignore
+    arg [-pie] ==> ignore
+    arg [-syslibroot] ==> ignore
+    arg [/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_2d98f] ==> ignore
+    arg [-L/Users/amech/mambaforge3/lib] ==> dir [/Users/amech/mambaforge3/lib]
+    arg [-L/Users/amech/mambaforge3/lib] ==> dir [/Users/amech/mambaforge3/lib]
+    arg [-L/Users/amech/mambaforge3/lib] ==> dir [/Users/amech/mambaforge3/lib]
+    arg [-rpath] ==> ignore
+    arg [/Users/amech/mambaforge3/lib] ==> ignore
+    arg [-framework] ==> ignore
+    arg [OpenCL] ==> ignore
+    arg [-commons] ==> ignore
+    arg [use_dylibs] ==> ignore
+    arg [-search_paths_first] ==> ignore
+    arg [-headerpad_max_install_names] ==> ignore
+    arg [-pie] ==> ignore
+    arg [-headerpad_max_install_names] ==> ignore
+    arg [-dead_strip_dylibs] ==> ignore
+    arg [-rpath] ==> ignore
+    arg [/Users/amech/mambaforge3/lib] ==> ignore
+    arg [-v] ==> ignore
+    arg [CMakeFiles/cmTC_2d98f.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lmpi] ==> lib [mpi]
+    arg [-lpmpi] ==> lib [pmpi]
+    arg [-lSystem] ==> lib [System]
+    arg [/Users/amech/mambaforge3/lib/clang/12.0.1/lib/darwin/libclang_rt.osx.a] ==> lib [/Users/amech/mambaforge3/lib/clang/12.0.1/lib/darwin/libclang_rt.osx.a]
+  Library search paths: [;/Users/amech/mambaforge3/lib;/Users/amech/mambaforge3/lib;/Users/amech/mambaforge3/lib;/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib]
+  Framework search paths: [;/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/]
+  remove lib [System]
+  remove lib [/Users/amech/mambaforge3/lib/clang/12.0.1/lib/darwin/libclang_rt.osx.a]
+  collapse library dir [/Users/amech/mambaforge3/lib] ==> [/Users/amech/mambaforge3/lib]
+  collapse library dir [/Users/amech/mambaforge3/lib] ==> [/Users/amech/mambaforge3/lib]
+  collapse library dir [/Users/amech/mambaforge3/lib] ==> [/Users/amech/mambaforge3/lib]
+  collapse library dir [/Users/amech/mambaforge3/lib] ==> [/Users/amech/mambaforge3/lib]
+  collapse library dir [/Users/amech/mambaforge3/lib] ==> [/Users/amech/mambaforge3/lib]
+  collapse library dir [/Users/amech/mambaforge3/lib] ==> [/Users/amech/mambaforge3/lib]
+  collapse library dir [/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib]
+  collapse framework dir [/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks]
+  implicit libs: [mpi;pmpi]
+  implicit objs: []
+  implicit dirs: [/Users/amech/mambaforge3/lib;/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib]
+  implicit fwks: [/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks]
+
+
