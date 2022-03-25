@@ -10,7 +10,7 @@
 // Default size of image
 #define X 1280
 #define Y 720
-#define MAX_ITER 10000
+#define MAX_SAMPLES 10000
 
 void calc_mandelbrot(uint8_t image[Y][X]) {
     double x, y;    // coordinates of the point in the complex plane
@@ -29,14 +29,14 @@ void calc_mandelbrot(uint8_t image[Y][X]) {
             cy = y_map[0] + ((double) i / Y) * (y_map[1] - y_map[0]);
 
             iteration = 0;
-            while (x * x + y * y <= 2 * 2 && iteration < MAX_ITER) {
+            while (x * x + y * y <= 2 * 2 && iteration < MAX_SAMPLES) {
                 x_tmp = x * x - y * y + cx;
                 y = 2 * x * y + cy;
                 x = x_tmp;
                 iteration = iteration + 1;
             }
 
-            norm_iteration = (uint8_t)  ((MAX_ITER / iteration) * (iteration_map[1] - iteration_map[0]));
+            norm_iteration = (uint8_t)  ((MAX_SAMPLES / iteration) * (iteration_map[1] - iteration_map[0]));
             image[i][j] = norm_iteration;
         }
     }
@@ -53,7 +53,7 @@ int main() {
 
     clock_t end = clock();
     double time_spent = (double)(end - begin) / CLOCKS_PER_SEC;
-    printf("execution time calc_mandelbrot: %f\n", time_spent);
+    printf("execution time calc_mandelbrot: %f s\n", time_spent);
 
 	const int channel_nr = 1, stride_bytes = 0;
 	stbi_write_png("mandelbrot.png", X, Y, channel_nr, image, stride_bytes);

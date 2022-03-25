@@ -22,7 +22,7 @@ function calc_mandelbrot(image):
         cx = mapped x_pixel_idx to Mandelbrot x-axis [-2.5, 1]
         cy = mapped y_pixel_idx to Mandelbrot y-axis [-1, 1]
         iteration = 0
-        while (x*x + y*y <= 2*2 AND iteration < MAX_ITER) do:
+        while (x*x + y*y <= 2*2 AND iteration < MAX_SAMPLES) do:
             x_tmp = x*x - y*y + cx
             y = 2*x*y + cy
             x = x_tmp
@@ -37,7 +37,9 @@ function calc_mandelbrot(image):
 - Open the `mandelbrot.c` file and implement the sequential `calc_mandelbrot` function with the help of the provided pseudocode.
 - Check out the generated image `mandelbrot.png` to see if you implemented the algorithm correctly. 
 - Benchmark your program on the LCC2 cluster, document your results and add them to the comparison spreadsheet linked on Discord. How would you improve program performance?
+  `execution time calc_mandelbrot: 23.780000`
 - Can you think of a way to parallelize this algorithm?
+  `One way would be to run the outer loop in parallel, so that one thread always executes the whole inner for loop.  What to do with constant access on image?? `
 
 ## Exercise 2 (1 Point)
 
