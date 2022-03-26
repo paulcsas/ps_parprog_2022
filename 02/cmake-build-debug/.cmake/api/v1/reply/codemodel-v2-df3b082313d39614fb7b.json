@@ -39,7 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "02::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-02-Debug-c20c5f33241d1999844b.json",
+					"jsonFile" : "target-02-Debug-ede48dc1c6de48c42842.json",
 					"name" : "02",
 					"projectIndex" : 0
 				}
@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/Users/amech/Documents/GitHub/ps_parprog_2022/02/cmake-build-debug",
-		"source" : "/Users/amech/Documents/GitHub/ps_parprog_2022/02"
+		"build" : "/home/pauli/Documents/GitHub/ps_parprog_2022/02/cmake-build-debug",
+		"source" : "/home/pauli/Documents/GitHub/ps_parprog_2022/02"
 	},
 	"version" : 
 	{

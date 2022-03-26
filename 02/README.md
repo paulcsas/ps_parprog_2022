@@ -37,9 +37,9 @@ function calc_mandelbrot(image):
 - Open the `mandelbrot.c` file and implement the sequential `calc_mandelbrot` function with the help of the provided pseudocode.
 - Check out the generated image `mandelbrot.png` to see if you implemented the algorithm correctly. 
 - Benchmark your program on the LCC2 cluster, document your results and add them to the comparison spreadsheet linked on Discord. How would you improve program performance?
-  `execution time calc_mandelbrot: 23.780000`
+#### Answer: execution time calc_mandelbrot: 23.780000
 - Can you think of a way to parallelize this algorithm?
-  `One way would be to run the outer loop in parallel, so that one thread always executes the whole inner for loop.  What to do with constant access on image?? `
+#### Answer: One way would be to run the outer loop in parallel, so that one thread always executes the whole inner for loop.  What to do with constant access on image???
 
 ## Exercise 2 (1 Point)
 
@@ -66,8 +66,11 @@ for (size_t j = 0; j < n; ++j) {
 ### Tasks
 
 - For both implementations, give a function f to calculate the number of data cache read misses for the matrix size n and the cache line size s in an 8-way set-associative cache. Assume that all variables are initialized appropriately (the matrix elements are of type `int32_t`) and that the matrices are stored in contiguous memory in row-major order. Additionally, the matrices are too large to store them entirely in the cache (n >> s).
+- #### Answer: v1: *N=8* blocks per cache set with space for *s/(32byte)* uint32_t --> entries per set: *e = 8s/(32byte)* --> *n<sub>miss</sub> = n<sub>accesses* *n² / e* For usual *s = 64 bytes* and *n = 10000* the *n<sub>access* *= 3* that leads to a total of 18750000 misses
+- #### Answer: v2: each access operation leads to a cache miss --> *n<sub>miss</sub> = n<sub>accesses<sub>* *<dot>n²* --> *n = 10000* leads to *n<sub>miss</sub>* = *3 <dot>10⁸*
 - Use the two snippets to implement two versions of the Hadamard product.
 - Log into the LCC2 cluster and analyze the cache behavior of the implementations using `cachegrind` and `perf`. Can you validate your theoretical findings? Compare the results of both tools.
+- #### Answer: Cachegrind misses for the different implementations match the theoretical findings.
 
 ## Exercise 3 (1 Point)
 
