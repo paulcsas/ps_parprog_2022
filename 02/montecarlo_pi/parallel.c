@@ -11,13 +11,12 @@
 // Based on the source https://github.com/ishanthilina/Pthreads-Monte-Carlo-Pi-Calculation/blob/master/pthread.c
 
 void throw_guesses(long num_samples, long* hit_count, unsigned int *seed) {
+    double x;
+    double y;
     for (long count = 0; count < num_samples; count++) {
-        double x = rand_r(seed) / ((double) RAND_MAX);
-        double y = rand_r(seed) / ((double) RAND_MAX);
-
-        double r = sqrt((x * x) + (y * y));
-
-        if (r < 1) {
+        x = rand_r(seed) / ((double) RAND_MAX);
+        y = rand_r(seed) / ((double) RAND_MAX);
+        if (sqrt((x * x) + (y * y)) < 1) {
             (*hit_count)++;
         }
     }
