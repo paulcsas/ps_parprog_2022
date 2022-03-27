@@ -38,8 +38,9 @@ function calc_mandelbrot(image):
 - Check out the generated image `mandelbrot.png` to see if you implemented the algorithm correctly. 
 - Benchmark your program on the LCC2 cluster, document your results and add them to the comparison spreadsheet linked on Discord. How would you improve program performance?
 #### Answer: execution time calc_mandelbrot (without -O3): 23.78 s / execution time calc_mandelbrot (with -O3): 13.61 s
+#### so the easiest improvement is achieved with optimization via compiler. More improvements can be achieved by minimizing cache misses, see exercise 2, and reducing unnecessary operations.
 - Can you think of a way to parallelize this algorithm?
-#### Answer: One way would be to run the outer loop in parallel, so that one thread always executes the whole inner for loop.  What to do with constant access on image???
+#### Answer: One way would be to run the outer loop in parallel, so that one thread always executes the whole inner for loop. But the constant access on imag will be a problem, so local copies for the threads should be made.
 
 ## Exercise 2 (1 Point)
 
@@ -85,7 +86,8 @@ There are several methods to approximate Pi numerically. In this exercise, you a
 - Implement a serial version of Monte Carlo Pi approximation.
 - Implement a parallel version of Monte Carlo Pi approximation using POSIX Threads Library (`pthread`).
 - Benchmark the sequential version and the parallel version for 1 to 8 threads on LCC2 using n = 500,000,000. Document your results and visualize them in appropriate figures. How could you improve program performance?
-- #### Answer: mesured
+- #### Answer: computational time for the serial version was 18.31 s. For the parallel version with one thread it was 18.575 s, and for 8 threads 2.338 s on lcc2. See also Figure below.
+![alt text](https://github.com/paulcsas/ps_parprog_2022/blob/main/02/plot_montecarlo.jpg?raw=true)
 - Add your measured execution times for 1 and 8 threads on LCC2 to the comparison spreadsheet linked on Discord.
 
 ## General Notes
