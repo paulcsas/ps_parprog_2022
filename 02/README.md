@@ -37,7 +37,7 @@ function calc_mandelbrot(image):
 - Open the `mandelbrot.c` file and implement the sequential `calc_mandelbrot` function with the help of the provided pseudocode.
 - Check out the generated image `mandelbrot.png` to see if you implemented the algorithm correctly. 
 - Benchmark your program on the LCC2 cluster, document your results and add them to the comparison spreadsheet linked on Discord. How would you improve program performance?
-#### Answer: execution time calc_mandelbrot: 23.780000
+#### Answer: execution time calc_mandelbrot (without -O3): 23.78 s / execution time calc_mandelbrot (with -O3): 13.61 s
 - Can you think of a way to parallelize this algorithm?
 #### Answer: One way would be to run the outer loop in parallel, so that one thread always executes the whole inner for loop.  What to do with constant access on image???
 
