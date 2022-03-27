@@ -4,21 +4,25 @@
 #include <math.h>
 #include <time.h>
 
+// compiled with: gcc serial.c -o serial -std=gnu11 -Wall -Wextra -lm -lpthread
+
 double random_unity() {
     return rand() / ((double) RAND_MAX); // return normalized value between 0 and 1
 }
 
-double estimate_pi(uint32_t number_of_samples) {
+double estimate_pi(long number_of_samples) {
 
-    uint32_t hit_count = 0;
+    long hit_count = 0;
+    double x, y;
 
-    for (uint32_t count = 0; count < number_of_samples; count++) {
-        double x = random_unity();
-        double y = random_unity();
+    unsigned int seed = (unsigned int)(time(NULL));
 
-        double r = sqrt((x * x) + (y * y));
+    for (long count = 0; count < number_of_samples; count++) {
+        // also used rand_r for this version, since it is faster than rand()
+        x = rand_r(&seed) / ((double) RAND_MAX);
+        y = rand_r(&seed) / ((double) RAND_MAX);
 
-        if (r < 1) {
+        if (sqrt((x * x) + (y * y)) < 1) {
             hit_count++;
         }
     }
@@ -27,8 +31,6 @@ double estimate_pi(uint32_t number_of_samples) {
 }
 
 int main(int argc, char *argv[]) {
-    srand(time(NULL));
-
     if(argc != 2) {
         printf("Provide sample size as argument\n");
         exit(1);
