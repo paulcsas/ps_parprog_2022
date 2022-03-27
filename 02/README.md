@@ -85,6 +85,7 @@ There are several methods to approximate Pi numerically. In this exercise, you a
 - Implement a serial version of Monte Carlo Pi approximation.
 - Implement a parallel version of Monte Carlo Pi approximation using POSIX Threads Library (`pthread`).
 - Benchmark the sequential version and the parallel version for 1 to 8 threads on LCC2 using n = 500,000,000. Document your results and visualize them in appropriate figures. How could you improve program performance?
+- #### Answer: mesured
 - Add your measured execution times for 1 and 8 threads on LCC2 to the comparison spreadsheet linked on Discord.
 
 ## General Notes

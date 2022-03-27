@@ -4,7 +4,7 @@
 #include <math.h>
 #include <time.h>
 
-#define NUM_THREADS 8         //number of threads
+#define NUM_THREADS 1         //number of threads
 #define NUM_SAMPLES 500000000      //total number of samples
 #define BILLION  1E9
 
