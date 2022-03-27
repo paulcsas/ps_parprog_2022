@@ -5,7 +5,7 @@
 
 // Comparison of cache behaviour between row major and column major oriented loops
 
-// Perf execution:  perf stat ./hadamard
+// Perf execution:  perf stat -e cache-references,cache-misses ./hadamard
 
 int main() {
     static uint32_t a[n][n];

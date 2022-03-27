@@ -72,6 +72,8 @@ for (size_t j = 0; j < n; ++j) {
 - Log into the LCC2 cluster and analyze the cache behavior of the implementations using `cachegrind` and `perf`. Can you validate your theoretical findings? Compare the results of both tools.
 - #### Answer: Cachegrind misses for the different implementations match the theoretical findings.
 
+
+
 ## Exercise 3 (1 Point)
 
 ### Description

@@ -12,7 +12,6 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/pauli/Documents/GitHub/ps_parprog_2022/02/hadamard/hadamard_v1.c" "CMakeFiles/02.dir/hadamard/hadamard_v1.c.o" "gcc" "CMakeFiles/02.dir/hadamard/hadamard_v1.c.o.d"
   "/home/pauli/Documents/GitHub/ps_parprog_2022/02/hadamard/hadamard_v2.c" "CMakeFiles/02.dir/hadamard/hadamard_v2.c.o" "gcc" "CMakeFiles/02.dir/hadamard/hadamard_v2.c.o.d"
   "/home/pauli/Documents/GitHub/ps_parprog_2022/02/mandelbrot/mandelbrot.c" "CMakeFiles/02.dir/mandelbrot/mandelbrot.c.o" "gcc" "CMakeFiles/02.dir/mandelbrot/mandelbrot.c.o.d"
-  "/home/pauli/Documents/GitHub/ps_parprog_2022/02/montecarlo_pi/parallel.c" "CMakeFiles/02.dir/montecarlo_pi/parallel.c.o" "gcc" "CMakeFiles/02.dir/montecarlo_pi/parallel.c.o.d"
   "/home/pauli/Documents/GitHub/ps_parprog_2022/02/montecarlo_pi/serial.c" "CMakeFiles/02.dir/montecarlo_pi/serial.c.o" "gcc" "CMakeFiles/02.dir/montecarlo_pi/serial.c.o.d"
   )
 

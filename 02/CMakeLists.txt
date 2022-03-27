@@ -11,7 +11,6 @@ add_executable(02
         hadamard/hadamard.c
         hadamard/hadamard_v1.c
         hadamard/hadamard_v2.c
-        montecarlo_pi/parallel.c
         montecarlo_pi/serial.c
         mandelbrot/mandelbrot.c
         mandelbrot/stb_image_write.h

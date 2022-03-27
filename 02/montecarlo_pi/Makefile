@@ -1,14 +1,12 @@
-CFLAGS = -std=gnu11 -Wall -Wextra -lm
+CFLAGS = -std=gnu11 -Wall -Wextra -lm -fopenmp
 
 .PHONY: all
-all: serial parallel parallel_v2
+all: serial parallel_v2
 
 .PHONY: clean
 clean:
-	$(RM) serial parallel parallel_v2
+	$(RM) serial parallel parallel_v2 parallel_pk
 
 serial: serial.c
-
-parallel: parallel.c
 
 parallel_v2: parallel_v2.c

@@ -111,24 +111,10 @@ CMakeFiles/02.dir/hadamard/hadamard_v2.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/02.dir/hadamard/hadamard_v2.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pauli/Documents/GitHub/ps_parprog_2022/02/hadamard/hadamard_v2.c -o CMakeFiles/02.dir/hadamard/hadamard_v2.c.s
 
-CMakeFiles/02.dir/montecarlo_pi/parallel.c.o: CMakeFiles/02.dir/flags.make
-CMakeFiles/02.dir/montecarlo_pi/parallel.c.o: ../montecarlo_pi/parallel.c
-CMakeFiles/02.dir/montecarlo_pi/parallel.c.o: CMakeFiles/02.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pauli/Documents/GitHub/ps_parprog_2022/02/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/02.dir/montecarlo_pi/parallel.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/02.dir/montecarlo_pi/parallel.c.o -MF CMakeFiles/02.dir/montecarlo_pi/parallel.c.o.d -o CMakeFiles/02.dir/montecarlo_pi/parallel.c.o -c /home/pauli/Documents/GitHub/ps_parprog_2022/02/montecarlo_pi/parallel.c
-
-CMakeFiles/02.dir/montecarlo_pi/parallel.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/02.dir/montecarlo_pi/parallel.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pauli/Documents/GitHub/ps_parprog_2022/02/montecarlo_pi/parallel.c > CMakeFiles/02.dir/montecarlo_pi/parallel.c.i
-
-CMakeFiles/02.dir/montecarlo_pi/parallel.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/02.dir/montecarlo_pi/parallel.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pauli/Documents/GitHub/ps_parprog_2022/02/montecarlo_pi/parallel.c -o CMakeFiles/02.dir/montecarlo_pi/parallel.c.s
-
 CMakeFiles/02.dir/montecarlo_pi/serial.c.o: CMakeFiles/02.dir/flags.make
 CMakeFiles/02.dir/montecarlo_pi/serial.c.o: ../montecarlo_pi/serial.c
 CMakeFiles/02.dir/montecarlo_pi/serial.c.o: CMakeFiles/02.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pauli/Documents/GitHub/ps_parprog_2022/02/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/02.dir/montecarlo_pi/serial.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pauli/Documents/GitHub/ps_parprog_2022/02/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/02.dir/montecarlo_pi/serial.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/02.dir/montecarlo_pi/serial.c.o -MF CMakeFiles/02.dir/montecarlo_pi/serial.c.o.d -o CMakeFiles/02.dir/montecarlo_pi/serial.c.o -c /home/pauli/Documents/GitHub/ps_parprog_2022/02/montecarlo_pi/serial.c
 
 CMakeFiles/02.dir/montecarlo_pi/serial.c.i: cmake_force
@@ -142,7 +128,7 @@ CMakeFiles/02.dir/montecarlo_pi/serial.c.s: cmake_force
 CMakeFiles/02.dir/mandelbrot/mandelbrot.c.o: CMakeFiles/02.dir/flags.make
 CMakeFiles/02.dir/mandelbrot/mandelbrot.c.o: ../mandelbrot/mandelbrot.c
 CMakeFiles/02.dir/mandelbrot/mandelbrot.c.o: CMakeFiles/02.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pauli/Documents/GitHub/ps_parprog_2022/02/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/02.dir/mandelbrot/mandelbrot.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pauli/Documents/GitHub/ps_parprog_2022/02/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/02.dir/mandelbrot/mandelbrot.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/02.dir/mandelbrot/mandelbrot.c.o -MF CMakeFiles/02.dir/mandelbrot/mandelbrot.c.o.d -o CMakeFiles/02.dir/mandelbrot/mandelbrot.c.o -c /home/pauli/Documents/GitHub/ps_parprog_2022/02/mandelbrot/mandelbrot.c
 
 CMakeFiles/02.dir/mandelbrot/mandelbrot.c.i: cmake_force
@@ -158,7 +144,6 @@ CMakeFiles/02.dir/mandelbrot/mandelbrot.c.s: cmake_force
 "CMakeFiles/02.dir/hadamard/hadamard.c.o" \
 "CMakeFiles/02.dir/hadamard/hadamard_v1.c.o" \
 "CMakeFiles/02.dir/hadamard/hadamard_v2.c.o" \
-"CMakeFiles/02.dir/montecarlo_pi/parallel.c.o" \
 "CMakeFiles/02.dir/montecarlo_pi/serial.c.o" \
 "CMakeFiles/02.dir/mandelbrot/mandelbrot.c.o"
 
@@ -168,12 +153,11 @@ CMakeFiles/02.dir/mandelbrot/mandelbrot.c.s: cmake_force
 02: CMakeFiles/02.dir/hadamard/hadamard.c.o
 02: CMakeFiles/02.dir/hadamard/hadamard_v1.c.o
 02: CMakeFiles/02.dir/hadamard/hadamard_v2.c.o
-02: CMakeFiles/02.dir/montecarlo_pi/parallel.c.o
 02: CMakeFiles/02.dir/montecarlo_pi/serial.c.o
 02: CMakeFiles/02.dir/mandelbrot/mandelbrot.c.o
 02: CMakeFiles/02.dir/build.make
 02: CMakeFiles/02.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/pauli/Documents/GitHub/ps_parprog_2022/02/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking C executable 02"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/pauli/Documents/GitHub/ps_parprog_2022/02/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C executable 02"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/02.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

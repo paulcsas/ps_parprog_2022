@@ -15,8 +15,8 @@
 
 valgrind --tool=cachegrind ./hadamard
 
-valgrind perf stat ./hadamard_v1
+valgrind perf stat -e cache-references,cache-misses ./hadamard_v1
 
-valgrind perf stat ./hadamard_v2
+valgrind perf stat -e cache-references,cache-misses ./hadamard_v2
 
 /bin/hostname

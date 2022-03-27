@@ -5,7 +5,7 @@
 
 // Comparison of cache behaviour between row major and column major oriented loops
 
-// Perf execution:  perf stat ./hadamard
+// Perf execution:  perf stat -e cache-references,cache-misses ./hadamard
 
 int main() {
     static uint32_t a[n][n];
@@ -16,7 +16,7 @@ int main() {
     hadamard_v2(a, b, c);
     clock_t end = clock();
     double time_spent = (double)(end - begin) / CLOCKS_PER_SEC;
-    printf("Time spent for hadamard_v1: %f s\n", time_spent);
+    printf("Time spent for hadamard_v2: %f s\n", time_spent);
 
 	return EXIT_SUCCESS;
 }

@@ -1,4 +1,4 @@
-CFLAGS = -std=gnu11 -Wall -Wextra -lm
+CFLAGS = -std=gnu11 -O3 -Wall -Wextra -lm
 
 .PHONY: all
 all: mandelbrot

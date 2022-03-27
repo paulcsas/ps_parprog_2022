@@ -9,7 +9,6 @@ double random_unity() {
 }
 
 double estimate_pi(uint32_t number_of_samples) {
-    srand(time(NULL));
 
     uint32_t hit_count = 0;
 
@@ -28,6 +27,7 @@ double estimate_pi(uint32_t number_of_samples) {
 }
 
 int main(int argc, char *argv[]) {
+    srand(time(NULL));
 
     if(argc != 2) {
         printf("Provide sample size as argument\n");
