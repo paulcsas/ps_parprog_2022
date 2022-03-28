@@ -72,7 +72,7 @@ for (size_t j = 0; j < n; ++j) {
 - Use the two snippets to implement two versions of the Hadamard product.
 - Log into the LCC2 cluster and analyze the cache behavior of the implementations using `cachegrind` and `perf`. Can you validate your theoretical findings? Compare the results of both tools.
 - #### Answer: Cachegrind misses for the different implementations match the theoretical findings.
-
+- #### Also, the results of Perf match quite well, but the program had to be implemented twice, since the output of Perf does only give results for the whole program (to my knowledge...)
 
 
 ## Exercise 3 (1 Point)
