@@ -6,10 +6,6 @@
 
 // compiled with: gcc serial.c -o serial -std=gnu11 -Wall -Wextra -lm -lpthread
 
-double random_unity() {
-    return rand() / ((double) RAND_MAX); // return normalized value between 0 and 1
-}
-
 double estimate_pi(long number_of_samples) {
 
     long hit_count = 0;

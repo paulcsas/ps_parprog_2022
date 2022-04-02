@@ -225,6 +225,30 @@ mandelbrot/mandelbrot.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/02.dir/build.make CMakeFiles/02.dir/mandelbrot/mandelbrot.c.s
 .PHONY : mandelbrot/mandelbrot.c.s
 
+montecarlo_pi/parallel.o: montecarlo_pi/parallel.c.o
+.PHONY : montecarlo_pi/parallel.o
+
+# target to build an object file
+montecarlo_pi/parallel.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/02.dir/build.make CMakeFiles/02.dir/montecarlo_pi/parallel.c.o
+.PHONY : montecarlo_pi/parallel.c.o
+
+montecarlo_pi/parallel.i: montecarlo_pi/parallel.c.i
+.PHONY : montecarlo_pi/parallel.i
+
+# target to preprocess a source file
+montecarlo_pi/parallel.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/02.dir/build.make CMakeFiles/02.dir/montecarlo_pi/parallel.c.i
+.PHONY : montecarlo_pi/parallel.c.i
+
+montecarlo_pi/parallel.s: montecarlo_pi/parallel.c.s
+.PHONY : montecarlo_pi/parallel.s
+
+# target to generate assembly for a file
+montecarlo_pi/parallel.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/02.dir/build.make CMakeFiles/02.dir/montecarlo_pi/parallel.c.s
+.PHONY : montecarlo_pi/parallel.c.s
+
 montecarlo_pi/serial.o: montecarlo_pi/serial.c.o
 .PHONY : montecarlo_pi/serial.o
 
@@ -270,6 +294,9 @@ help:
 	@echo "... mandelbrot/mandelbrot.o"
 	@echo "... mandelbrot/mandelbrot.i"
 	@echo "... mandelbrot/mandelbrot.s"
+	@echo "... montecarlo_pi/parallel.o"
+	@echo "... montecarlo_pi/parallel.i"
+	@echo "... montecarlo_pi/parallel.s"
 	@echo "... montecarlo_pi/serial.o"
 	@echo "... montecarlo_pi/serial.i"
 	@echo "... montecarlo_pi/serial.s"

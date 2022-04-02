@@ -1,1 +1,1 @@
-/usr/bin/cc -g CMakeFiles/02.dir/hadamard/hadamard.c.o CMakeFiles/02.dir/hadamard/hadamard_v1.c.o CMakeFiles/02.dir/hadamard/hadamard_v2.c.o CMakeFiles/02.dir/montecarlo_pi/serial.c.o CMakeFiles/02.dir/mandelbrot/mandelbrot.c.o -o 02 
+/usr/bin/cc -g CMakeFiles/02.dir/hadamard/hadamard.c.o CMakeFiles/02.dir/hadamard/hadamard_v1.c.o CMakeFiles/02.dir/hadamard/hadamard_v2.c.o CMakeFiles/02.dir/montecarlo_pi/parallel.c.o CMakeFiles/02.dir/montecarlo_pi/serial.c.o CMakeFiles/02.dir/mandelbrot/mandelbrot.c.o -o 02 

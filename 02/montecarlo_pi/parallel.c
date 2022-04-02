@@ -29,7 +29,7 @@ void* calc(void* thread_id) {
     long* hit_count = (long *) malloc(sizeof(long));
     *hit_count = 0;
 
-    double num_samples = NUM_SAMPLES/NUM_THREADS;
+    long num_samples = NUM_SAMPLES/NUM_THREADS;
 
     unsigned int seed = (unsigned int)(time(NULL));
 
@@ -68,6 +68,8 @@ int main() {
     for(long t=0;t<NUM_THREADS;t++){
         pthread_join(threads[t], &thread_result);
         hit_total += *(long *)thread_result;
+
+        free(thread_result);
     }
 
     clock_gettime(CLOCK_REALTIME, &requestEnd);

@@ -9,6 +9,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/02.dir/hadamard/hadamard_v2.c.o.d"
   "CMakeFiles/02.dir/mandelbrot/mandelbrot.c.o"
   "CMakeFiles/02.dir/mandelbrot/mandelbrot.c.o.d"
+  "CMakeFiles/02.dir/montecarlo_pi/parallel.c.o"
+  "CMakeFiles/02.dir/montecarlo_pi/parallel.c.o.d"
   "CMakeFiles/02.dir/montecarlo_pi/serial.c.o"
   "CMakeFiles/02.dir/montecarlo_pi/serial.c.o.d"
 )
